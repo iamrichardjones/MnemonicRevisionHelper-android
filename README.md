@@ -29,9 +29,6 @@ This project allows you to enters letters that you want to memorise and then it 
 
 And I could not do a project on mnemonics without referencing [xkcd](https://xkcd.com/992/)
 
-### Translations:
-Thanks to Sabine Reisinger for the German translation
-
 ### Legal Bit
 All data used in this project is sourced from the internet. I take no responsibility for any errors. Please let me know if there are problems or if any bits should be removed.
 
@@ -39,3 +36,4 @@ All data used in this project is sourced from the internet. I take no responsibi
 * Work out how UNIT TESTS are working here!!?!? For me anyway IntelliJ is making me struggle much more than it should
 * delete character does not refresh list
 * load the file (with loading screen)
+* add translations
