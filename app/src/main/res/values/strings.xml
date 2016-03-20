@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world22!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="mnemonic_input_hint">Add letters here to get mnemonicD</string>
+    <string name="mnemonic_input_hint">Add letters here to get mnemonic</string>
     <string name="origin">Origin: </string>
     <string name="answer">Answer: </string>
 </resources>

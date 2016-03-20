@@ -26,6 +26,7 @@ public class MnemonicFilter extends Filter {
     @Override
     protected void publishResults(CharSequence constraint, FilterResults results) {
         if (results.count == 0) {
+            filteredData = (List<MatchingMnemonic>) results.values;
             adapter.notifyDataSetInvalidated();
         } else {
             filteredData = (List<MatchingMnemonic>) results.values;

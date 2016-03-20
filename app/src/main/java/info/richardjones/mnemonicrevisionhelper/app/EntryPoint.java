@@ -20,7 +20,6 @@ public class EntryPoint extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_entry_point);
 
         LinearLayout layoutMain = new LinearLayout(this);
         layoutMain.setOrientation(LinearLayout.VERTICAL);

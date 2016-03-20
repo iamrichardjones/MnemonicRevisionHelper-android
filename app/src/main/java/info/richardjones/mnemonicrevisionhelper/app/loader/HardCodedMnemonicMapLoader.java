@@ -18,7 +18,7 @@ public class HardCodedMnemonicMapLoader implements MnemonicLoader<MatchingMnemon
 //        map.add(new MatchingMnemonic("AbbRbc", new MatchingMnemonicDetail("American by birth Rebel by choice", "Harley Davidson","Slogan")));
 //        map.add(new MatchingMnemonic("Abbrbc", new MatchingMnemonicDetail("American by birth, rebel by choice", "Harley Davidson","Slogan")));
 //        map.add(new MatchingMnemonic("Acawtawa", new MatchingMnemonicDetail("A can a week, that’s all we ask", "California Almond Growers","Slogan")));
-//        map.add(new MatchingMnemonic("Adif", new MatchingMnemonicDetail("A diamond is forever", "De Beers","Slogan")));
+        map.add(new MatchingMnemonic("Adif", new MatchingMnemonicDetail("A diamond is forever", "De Beers","Slogan")));
 //        map.add(new MatchingMnemonic("Agtdtd", new MatchingMnemonicDetail("Away go troubles down the drain", "Roto-Rooter","Slogan")));
 //        map.add(new MatchingMnemonic("Aitpwthhm", new MatchingMnemonicDetail("Ace is the place with the helpful hardware man", "Ace Hardware","Slogan")));
 //        map.add(new MatchingMnemonic("Alddy", new MatchingMnemonicDetail("A little dab’ll do ya", "Brylcreem","Slogan")));
