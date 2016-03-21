@@ -40,13 +40,12 @@ public class MnemonicFilter extends Filter {
 
         List<MatchingMnemonic> filteredArrayNames = new ArrayList<MatchingMnemonic>();
 
-        for (int i = 0; i < originalData.size(); i++) {
-            MatchingMnemonic dataNames = originalData.get(i);
+        char[] charArray = constraint.toString().toUpperCase().toCharArray();
+        Arrays.sort(charArray);
+        String searchText = new String(charArray);
 
-            char[] charArray = constraint.toString().toUpperCase().toCharArray();
-            Arrays.sort(charArray);
-
-            if (dataNames.getOrderedMnemonic().toUpperCase().equals(new String(charArray).toUpperCase()))  {
+        for (MatchingMnemonic dataNames: originalData) {
+            if (dataNames.getOrderedMnemonic().equals(searchText))  {
                 filteredArrayNames.add(dataNames);
             }
         }
