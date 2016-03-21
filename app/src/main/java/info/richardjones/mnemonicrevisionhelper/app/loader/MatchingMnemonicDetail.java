@@ -45,4 +45,12 @@ public class MatchingMnemonicDetail {
         result = 31 * result + origin.hashCode();
         return result;
     }
+
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(" origin: ").append(origin);
+        builder.append(" category: ").append(category);
+        builder.append(" expandedMnemonic: ").append(expandedMnemonic);
+        return builder.toString();
+    }
 }

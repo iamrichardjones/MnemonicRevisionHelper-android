@@ -65,4 +65,10 @@ public class MatchingMnemonic {
         return result;
     }
 
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("mnemonic: ").append(mnemonic);
+        builder.append(" -> detail: ").append(detail);
+        return builder.toString();
+    }
 }
