@@ -34,6 +34,5 @@ All data used in this project is sourced from the internet. I take no responsibi
 
 ###TODO
 * Work out how UNIT TESTS are working here!!?!? For me anyway IntelliJ is making me struggle much more than it should
-* delete character does not refresh list
 * load the file (with loading screen)
 * add translations
