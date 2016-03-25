@@ -2,7 +2,7 @@ package info.richardjones.mnemonicrevisionhelper.app.loader;
 
 import java.util.List;
 
-public class HardCodedMnemonicMapLoader implements MnemonicLoader<MatchingMnemonic> {
+public class HardCodedMnemonicSloganMapLoader implements MnemonicLoader<MatchingMnemonic> {
 
     @Override
     public void load(List<MatchingMnemonic> map) {

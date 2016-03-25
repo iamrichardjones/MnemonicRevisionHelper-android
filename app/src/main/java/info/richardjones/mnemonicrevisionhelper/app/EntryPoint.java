@@ -44,16 +44,16 @@ public class EntryPoint extends AppCompatActivity {
 
     private List<MatchingMnemonic> loadData() {
         List<MatchingMnemonic> res = new ArrayList();
-        HardCodedMnemonicMapLoader loader1 = new HardCodedMnemonicMapLoader();
-        loader1.load(res);
-        HardCodedMnemonicSongMap1Loader loader2 = new HardCodedMnemonicSongMap1Loader();
-        loader2.load(res);
-        HardCodedMnemonicSongMap2Loader loader3 = new HardCodedMnemonicSongMap2Loader();
-        loader3.load(res);
-        HardCodedMnemonicSongMap3Loader loader4 = new HardCodedMnemonicSongMap3Loader();
-        loader4.load(res);
-        HardCodedMnemonicSongMap4Loader loader5 = new HardCodedMnemonicSongMap4Loader();
-        loader5.load(res);
+        HardCodedMnemonicSloganMapLoader sloganMapLoader = new HardCodedMnemonicSloganMapLoader();
+        sloganMapLoader.load(res);
+        HardCodedMnemonicSongMap1Loader songMap1Loader = new HardCodedMnemonicSongMap1Loader();
+        songMap1Loader.load(res);
+        HardCodedMnemonicSongMap2Loader songMap2Loader = new HardCodedMnemonicSongMap2Loader();
+        songMap2Loader.load(res);
+        HardCodedMnemonicSongMap3Loader songMap3Loader = new HardCodedMnemonicSongMap3Loader();
+        songMap3Loader.load(res);
+        HardCodedMnemonicSongMap4Loader songMap4Loader = new HardCodedMnemonicSongMap4Loader();
+        songMap4Loader.load(res);
 
         return res;
     }
