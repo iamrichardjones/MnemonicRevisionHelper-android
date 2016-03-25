@@ -1,6 +1,8 @@
 package info.richardjones.mnemonicrevisionhelper.app;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +11,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import info.richardjones.mnemonicrevisionhelper.app.loader.HardCodedMnemonicMapLoader;
-import info.richardjones.mnemonicrevisionhelper.app.loader.MatchingMnemonic;
+import info.richardjones.mnemonicrevisionhelper.app.loader.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +44,17 @@ public class EntryPoint extends AppCompatActivity {
 
     private List<MatchingMnemonic> loadData() {
         List<MatchingMnemonic> res = new ArrayList();
-        HardCodedMnemonicMapLoader loader = new HardCodedMnemonicMapLoader();
-        loader.load(res);
+        HardCodedMnemonicMapLoader loader1 = new HardCodedMnemonicMapLoader();
+        loader1.load(res);
+        HardCodedMnemonicSongMap1Loader loader2 = new HardCodedMnemonicSongMap1Loader();
+        loader2.load(res);
+        HardCodedMnemonicSongMap2Loader loader3 = new HardCodedMnemonicSongMap2Loader();
+        loader3.load(res);
+        HardCodedMnemonicSongMap3Loader loader4 = new HardCodedMnemonicSongMap3Loader();
+        loader4.load(res);
+        HardCodedMnemonicSongMap4Loader loader5 = new HardCodedMnemonicSongMap4Loader();
+        loader5.load(res);
+
         return res;
     }
 
@@ -63,9 +73,14 @@ public class EntryPoint extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            DialogFragment newFragment = new AboutBoxDialogFragment();
+            newFragment.show(getSupportFragmentManager(), "about");
+
+
             return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }

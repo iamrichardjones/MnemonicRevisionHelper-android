@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public class FileMnemonicMapLoader implements MnemonicLoader<MatchingMnemonic> {
 
     private static final String DELIMETER = "\\|";
