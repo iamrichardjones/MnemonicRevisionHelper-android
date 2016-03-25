@@ -8,6 +8,6 @@
     <string name="mnemonic_input_hint">Add letters here to get acronym</string>
     <string name="origin">Origin: </string>
     <string name="answer">Answer: </string>
-    <string name="dialog_about">Acronyms Memory Aid\n\nVersion 1\n\nBy Richard Jones 2016</string>
+    <string name="dialog_about">Acronyms Memory Aid\n\nVersion 0.2\n\nBy Richard Jones 2016</string>
     <string name="ok">ok</string>
 </resources>
