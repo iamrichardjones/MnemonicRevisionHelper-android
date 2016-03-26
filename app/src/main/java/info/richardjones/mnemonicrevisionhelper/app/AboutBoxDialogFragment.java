@@ -19,7 +19,6 @@ public class AboutBoxDialogFragment extends DialogFragment {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder
-//                .setMessage(FORMAT.format(new Date()))
                 .setMessage(R.string.dialog_about)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
