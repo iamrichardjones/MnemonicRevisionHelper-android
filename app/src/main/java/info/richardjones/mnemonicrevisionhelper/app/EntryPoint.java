@@ -75,11 +75,8 @@ public class EntryPoint extends AppCompatActivity {
         if (id == R.id.action_about) {
             DialogFragment newFragment = new AboutBoxDialogFragment();
             newFragment.show(getSupportFragmentManager(), "about");
-
-
             return true;
         }
-
 
         return super.onOptionsItemSelected(item);
     }
