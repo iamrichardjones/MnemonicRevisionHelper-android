@@ -3,6 +3,8 @@
 *This is the Android App Version of Mnemonic Revision Helper. There is a java console version on GitHub under this
 url: https://github.com/iamrichardjones/mnemonic-revision-helper*
 
+The latest release is available on Google Play: https://play.google.com/store/apps/details?id=info.richardjones.mnemonicrevisionhelper.app
+
 Exams are the bane of the lives of students. When I was memorising things I often used mnemonics to remember. For example
 
 *Richard Of York Gave Battle In Vain*
@@ -34,5 +36,4 @@ All data used in this project is sourced from the internet. I take no responsibi
 
 ###TODO
 * Work out how UNIT TESTS are working here!!?!? For me anyway IntelliJ is making me struggle much more than it should
-* load the file (with loading screen)
 * add translations
