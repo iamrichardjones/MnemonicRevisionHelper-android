@@ -25,7 +25,6 @@ public class AboutBoxDialogFragment extends DialogFragment {
                         //close
                     }
                 });
-        // Create the AlertDialog object and return it
         return builder.create();
     }
 }
