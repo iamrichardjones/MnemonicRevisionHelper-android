@@ -2,6 +2,7 @@ package info.richardjones.mnemonicrevisionhelper.app;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Filter;
 import info.richardjones.mnemonicrevisionhelper.app.loader.MatchingMnemonic;
@@ -44,6 +45,9 @@ public class MnemonicFilter extends Filter {
         Boolean incSlogans = sharedPref.getBoolean(SettingsActivity.USE_SLOGAN_PREFERENCES, true);
         Boolean incSongTitles = sharedPref.getBoolean(SettingsActivity.USE_SONG_TITLE_PREFERENCES, true);
 
+        Log.d("ABC: slog ", incSlogans +"");
+        Log.d("ABC: song", incSongTitles+"");
+
         List<MatchingMnemonic> filteredArrayNames = new ArrayList<MatchingMnemonic>();
 
         char[] charArray = constraint.toString().toUpperCase().toCharArray();
@@ -51,10 +55,10 @@ public class MnemonicFilter extends Filter {
         String searchText = new String(charArray);
 
         for (MatchingMnemonic dataNames: originalData) {
-            if (dataNames.getDetail().getOrigin().equals(MnemonicLoader.SLOGAN_ORIGIN_NAME) && !incSlogans) {
-                    continue;
+            if (dataNames.getDetail().getCategory().equals(MnemonicLoader.SLOGAN_ORIGIN_NAME) && !incSlogans) {
+                continue;
             }
-            if (dataNames.getDetail().getOrigin().equals(MnemonicLoader.SONG_TITLE_ORIGIN_NAME) && !incSongTitles) {
+            if (dataNames.getDetail().getCategory().equals(MnemonicLoader.SONG_TITLE_ORIGIN_NAME) && !incSongTitles) {
                 continue;
             }
             if (dataNames.getOrderedMnemonic().equals(searchText))  {
