@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">Acronym Memory Aid</string>
 
+    <string name="action_home">Home</string>
     <string name="action_settings">Settings</string>
     <string name="action_about">About</string>
 
     <string name="mnemonic_input_hint">Add letters here to get acronym</string>
     <string name="origin">Origin: </string>
     <string name="answer">Answer: </string>
-    <string name="dialog_about">Acronym Memory Aid\n\nVersion 1.02\n\nBy Richard Jones 2016</string>
-    <string name="ok">ok</string>
+    <string name="dialog_about">Acronym Memory Aid\n\nVersion 1.03\n\nBy Richard Jones 2016</string>
+    <string name="ok">OK</string>
+
+    <string name="dictionary_preferences_title">Dictionary</string>
+    <string name="title_slogan_checkbox">Search Slogans</string>
+    <string name="summary_checkbox_slogan">Search all Slogans</string>
+    <string name="default_slogan_preference">true</string>
+    <string name="title_song_titles_checkbox">Search Song Titles</string>
+    <string name="summary_song_titles_checkbox">Search all Song Titles</string>
+    <string name="default_song_title_preference">true</string>
 </resources>

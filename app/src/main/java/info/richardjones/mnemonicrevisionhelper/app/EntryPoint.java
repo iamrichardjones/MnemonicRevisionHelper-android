@@ -1,6 +1,10 @@
 package info.richardjones.mnemonicrevisionhelper.app;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
+import android.preference.PreferenceFragment;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +43,8 @@ public class EntryPoint extends AppCompatActivity {
 
         final EditText userInput = (EditText) findViewById(R.id.mnemonic_input);
         userInput.addTextChangedListener(new MnemonicInputTextListener(adapter));
+
+
     }
 
     private List<MatchingMnemonic> loadData() {
@@ -74,10 +80,18 @@ public class EntryPoint extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
             DialogFragment newFragment = new AboutBoxDialogFragment();
-            newFragment.show(getSupportFragmentManager(), "about");
+            newFragment.show(getSupportFragmentManager(), "ABOUT_KEY");
+            return true;
+        }
+
+        if (id == R.id.action_setting) {
+            Intent intent = new Intent(EntryPoint.this, SettingsActivity.class);
+            startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
