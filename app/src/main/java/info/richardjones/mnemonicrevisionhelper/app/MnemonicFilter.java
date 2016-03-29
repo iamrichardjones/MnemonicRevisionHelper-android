@@ -45,9 +45,6 @@ public class MnemonicFilter extends Filter {
         Boolean incSlogans = sharedPref.getBoolean(SettingsActivity.USE_SLOGAN_PREFERENCES, true);
         Boolean incSongTitles = sharedPref.getBoolean(SettingsActivity.USE_SONG_TITLE_PREFERENCES, true);
 
-        Log.d("ABC: slog ", incSlogans +"");
-        Log.d("ABC: song", incSongTitles+"");
-
         List<MatchingMnemonic> filteredArrayNames = new ArrayList<MatchingMnemonic>();
 
         char[] charArray = constraint.toString().toUpperCase().toCharArray();
