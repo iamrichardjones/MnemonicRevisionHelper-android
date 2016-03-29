@@ -18,4 +18,8 @@
     <string name="title_song_titles_checkbox">Search Song Titles</string>
     <string name="summary_song_titles_checkbox">Search all Song Titles</string>
     <string name="default_song_title_preference">true</string>
+    <string name="default_complete_search_preference">true</string>
+    <string name="search_preferences_title">Search</string>
+    <string name="title_complete_search_checkbox">Match All Letters</string>
+    <string name="summary_complete_search_slogan">Match every input letter with the result acronym</string>
 </resources>
