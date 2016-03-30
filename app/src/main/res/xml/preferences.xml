@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="@string/dictionary_preferences_title">
+        <CheckBoxPreference
+                android:key="use_slogan_preference"
+                android:title="@string/title_slogan_checkbox"
+                android:summary="@string/summary_checkbox_slogan"
+                android:defaultValue="@string/default_slogan_preference" />
+        <CheckBoxPreference
+                android:key="use_song_titles_preference"
+                android:title="@string/title_song_titles_checkbox"
+                android:summary="@string/summary_song_titles_checkbox"
+                android:defaultValue="@string/default_song_title_preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/search_preferences_title">
+        <CheckBoxPreference
+                android:key="use_complete_search_preference"
+                android:title="@string/title_complete_search_checkbox"
+                android:summary="@string/summary_complete_search_slogan"
+                android:defaultValue="@string/default_complete_search_preference" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
