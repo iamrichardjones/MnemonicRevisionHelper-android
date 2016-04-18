@@ -2,21 +2,9 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
-                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:layout_height="?android:attr/listPreferredItemHeight">
 
-                 >
-
-<!--<ImageView-->
-        <!--android:id="@+id/icon"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_marginRight="6dip"-->
-        <!--android:contentDescription="TODO"-->
-        <!--android:src="@drawable/ic_launcher" />-->
-
-<TextView
+    <TextView
         android:id="@+id/thirdLine"
         android:layout_width="fill_parent"
         android:layout_height="20dip"
@@ -27,7 +15,6 @@
         android:text="Description"
         android:paddingLeft="6dip"
         android:textSize="10sp" />
-        <!--android:layout_toRightOf="@id/icon"-->
 
     <TextView
             android:id="@+id/secondLine"
@@ -42,7 +29,7 @@
             android:text="Description"
             android:textSize="10sp" />
 
-<TextView
+    <TextView
         android:id="@+id/firstLine"
         android:layout_width="fill_parent"
         android:layout_height="45dip"
