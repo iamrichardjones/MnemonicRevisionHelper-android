@@ -8,7 +8,7 @@
     <string name="mnemonic_input_hint">Add letters here to get acronym</string>
     <string name="origin">Origin: </string>
     <string name="answer">Answer: </string>
-    <string name="dialog_about">Acronym Memory Aid\n\nVersion 1.05\n\nBy Richard Jones 2016</string>
+    <string name="dialog_about">Acronym Memory Aid\n\nVersion 1.07\n\nBy Richard Jones 2016</string>
     <string name="ok">OK</string>
 
     <string name="dictionary_preferences_title">Dictionary</string>
@@ -23,5 +23,5 @@
     <string name="title_complete_search_checkbox">Match All Letters</string>
     <string name="summary_complete_search_slogan">Match every input letter with the result acronym</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-4266169819994886/53580962581</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4266169819994886/5358096258</string>
 </resources>
